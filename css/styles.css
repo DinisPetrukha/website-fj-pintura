@@ -6,9 +6,9 @@
 
 /* --- Variables --- */
 :root {
-  --green:        #0000ff;
-  --green-dark:   #0000cc;
-  --green-light:  #e6e6ff;
+  --green:        #021635;
+  --green-dark:   #010e22;
+  --green-light:  #e8ecf5;
   --dark:         #1a1a1a;
   --darker:       #0d0d0d;
   --accent:       #e5a070;
@@ -62,7 +62,7 @@ p:last-child { margin-bottom: 0; }
 .btn-green {
   background: var(--green); color: var(--white); border: 2px solid var(--green);
 }
-.btn-green:hover { background: var(--green-dark); border-color: var(--green-dark); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,255,0.4); }
+.btn-green:hover { background: var(--green-dark); border-color: var(--green-dark); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(2,22,53,0.4); }
 .btn-green:active { transform: translateY(0); }
 .btn-outline-white {
   background: transparent; color: var(--white); border: 2px solid var(--white);
@@ -118,7 +118,7 @@ p:last-child { margin-bottom: 0; }
 }
 #site-header.scrolled {
   background: #111;
-  border-bottom-color: rgba(0,0,255,0.2);
+  border-bottom-color: rgba(2,22,53,0.2);
   box-shadow: 0 2px 24px rgba(0,0,0,0.5);
 }
 

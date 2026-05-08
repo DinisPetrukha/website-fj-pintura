@@ -46,7 +46,7 @@ function phoneSVG() {
 }
 
 function logoIMG(height) {
-  return `<img src="imgs/logo.png" alt="${COMPANY_NAME}" style="height:${height || 52}px;width:auto;display:block;">`;
+  return `<img src="imgs/logo-nobg.png" alt="${COMPANY_NAME}" style="height:${height || 52}px;width:auto;display:block;">`;
 }
 
 function buildDropdown(items) {
@@ -115,7 +115,7 @@ const PROCESS_HTML = `
 <section class="process-section">
   <div class="container">
     <div class="section-header" style="margin-bottom:48px;">
-      <div class="section-label" style="background:rgba(0,0,255,0.15);color:#0000ff;border:1px solid rgba(0,0,255,0.3);">Como Funcionamos</div>
+      <div class="section-label" style="background:rgba(2,22,53,0.12);color:#021635;border:1px solid rgba(2,22,53,0.25);">Como Funcionamos</div>
       <h2 style="color:#fff;">O Nosso Processo</h2>
       <p style="color:rgba(255,255,255,0.6);">Do primeiro contacto à entrega final — rápido, limpo e com acabamento impecável.</p>
     </div>
@@ -242,7 +242,7 @@ const FOOTER_HTML = `
       <div class="footer-grid">
         <div>
           <div class="footer-logo-wrap">
-            <img src="imgs/logo.png" alt="${COMPANY_NAME}" style="height:56px;width:auto;margin-bottom:12px;display:block;">
+            <img src="imgs/logo-nobg.png" alt="${COMPANY_NAME}" style="height:56px;width:auto;margin-bottom:12px;display:block;">
           </div>
           <p class="footer-tagline">${TAGLINE} ${YEARS_EXP} anos de experiência.</p>
           <div class="footer-contact">
@@ -309,7 +309,7 @@ const MODAL_HTML = `
     <button class="modal-close" id="modal-close" aria-label="Fechar">&times;</button>
     <div class="modal-logo">
       <div style="text-align:center;">
-        <img src="imgs/logo.png" alt="${COMPANY_NAME}" style="height:56px;width:auto;margin:0 auto 8px;">
+        <img src="imgs/logo-nobg.png" alt="${COMPANY_NAME}" style="height:56px;width:auto;margin:0 auto 8px;">
       </div>
     </div>
     <h2>PEÇA UM ORÇAMENTO GRÁTIS</h2>
