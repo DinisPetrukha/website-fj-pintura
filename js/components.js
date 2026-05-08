@@ -1,4 +1,4 @@
-/* ================================================
+﻿/* ================================================
    SHARED COMPONENTS — Header / Footer / Modal
    FJ Pintura e Pladur
    ================================================ */
@@ -14,14 +14,14 @@ const WA_LINK         = 'https://wa.me/351932995746';
 const FACEBOOK_URL    = 'https://www.facebook.com/share/1CWDQQ3gB7/';
 const INSTAGRAM_URL   = 'https://www.instagram.com/fj_pintura_e_pladur?igsh=MzhkMnR5cnJmYjBt';
 const YEARS_EXP       = '15';
-const TAGLINE         = 'Pintura mecanizada Airless, pintura interna/externa e pladur no Porto e arredores.';
-const CERTIFICATIONS  = ['15 Anos de Experiência', 'Pintura Mecanizada Airless', 'Pladur Profissional'];
-const BRANDS          = 'Pintura Airless · Pladur · Construção e Remodelação';
+const TAGLINE         = 'Pintura mecanizada profissional, pintura interna/externa e pladur no Porto e arredores.';
+const CERTIFICATIONS  = ['15 Anos de Experiência', 'Pintura Mecanizada', 'Pladur Profissional'];
+const BRANDS          = 'Pintura Mecanizada · Pladur · Construção e Remodelação';
 /* ─────────────────────────────────────────────────────────── */
 
 /* ─── NAVIGATION ─── */
 const SERVICES = [
-  { label: 'Pintura Mecanizada Airless', href: 'Pintura-Mecanizada-Airless.html' },
+  { label: 'Pintura Mecanizada',         href: 'Pintura-Mecanizada-Airless.html' },
   { label: 'Pintura Interna e Externa',  href: 'Pintura-Interna-e-Externa.html' },
   { label: 'Pladur',                     href: 'Pladur.html' },
   { label: 'Pintura de Condomínios',     href: 'Pintura-de-Condominios.html' },
@@ -151,7 +151,7 @@ const PROCESS_HTML = `
         </div>
         <div class="process-num">Passo 04</div>
         <h4>Execução Profissional</h4>
-        <p>Pintura Airless ou manual e trabalhos de pladur com máxima precisão e rapidez.</p>
+        <p>Pintura mecanizada profissional e trabalhos de pladur com máxima precisão e rapidez.</p>
       </div>
       <div class="process-step">
         <div class="process-icon">
@@ -396,3 +396,4 @@ function injectComponents(activePage) {
     document.querySelectorAll(`[data-page="${activePage}"]`).forEach(el => el.classList.add('active'));
   }
 }
+
