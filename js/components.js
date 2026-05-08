@@ -24,6 +24,7 @@ const SERVICES = [
   { label: 'Pintura Mecanizada Airless', href: 'Pintura-Mecanizada-Airless.html' },
   { label: 'Pintura Interna e Externa',  href: 'Pintura-Interna-e-Externa.html' },
   { label: 'Pladur',                     href: 'Pladur.html' },
+  { label: 'Pintura de Condomínios',     href: 'Pintura-de-Condominios.html' },
 ];
 
 const AREAS = [
