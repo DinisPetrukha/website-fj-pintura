@@ -115,7 +115,7 @@ const PROCESS_HTML = `
 <section class="process-section">
   <div class="container">
     <div class="section-header" style="margin-bottom:48px;">
-      <div class="section-label" style="background:rgba(2,22,53,0.12);color:#021635;border:1px solid rgba(2,22,53,0.25);">Como Funcionamos</div>
+      <div class="section-label" style="background:rgba(250,162,53,0.18);color:#faa235;border:1px solid rgba(250,162,53,0.4);">Como Funcionamos</div>
       <h2 style="color:#fff;">O Nosso Processo</h2>
       <p style="color:rgba(255,255,255,0.6);">Do primeiro contacto à entrega final — rápido, limpo e com acabamento impecável.</p>
     </div>
