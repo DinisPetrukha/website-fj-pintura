@@ -416,7 +416,7 @@ p:last-child { margin-bottom: 0; }
    SERVICES PHOTO GRID
    ================================================ */
 .services-grid {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
 }
 .service-card {
   position: relative; border-radius: var(--radius-lg); overflow: hidden;
@@ -937,7 +937,7 @@ p:last-child { margin-bottom: 0; }
 @media (max-width: 1024px) {
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
   .about-img-badge { right: 8px; bottom: -12px; }
-  .services-grid { grid-template-columns: repeat(3, 1fr); }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
   .content-grid { grid-template-columns: 1fr; }
   .content-aside { position: static; }
@@ -970,7 +970,7 @@ p:last-child { margin-bottom: 0; }
 @media (max-width: 480px) {
   .container { padding: 0 16px; }
   .hero h1 { font-size: 1.85rem; }
-  .services-grid { grid-template-columns: 1fr 1fr; }
+  .services-grid { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: 1fr; }
   .gallery-item.wide { grid-column: span 1; }
   .blog-grid { grid-template-columns: 1fr; }
