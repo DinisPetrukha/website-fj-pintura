@@ -954,6 +954,9 @@ p:last-child { margin-bottom: 0; }
   .main-nav, .header-phone { display: none; }
   .hamburger { display: flex; }
   .mobile-nav { display: block; }
+  .header-right .btn { display: none; }
+  .header-inner { height: 68px; }
+  .logo img { height: 52px !important; }
   .hero-inner { grid-template-columns: 1fr; gap: 36px; padding: 40px 0; }
   .hero-form-card { max-width: 480px; margin: 0 auto; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
@@ -980,7 +983,8 @@ p:last-child { margin-bottom: 0; }
   .process-steps { flex-wrap: wrap; }
   .process-step { flex: 0 0 calc(50% - 4px); }
   .areas-grid { grid-template-columns: 1fr 1fr; }
-  .header-inner { height: 64px; }
+  .header-inner { height: 60px; }
+  .logo img { height: 44px !important; }
 }
 
 /* ================================================
