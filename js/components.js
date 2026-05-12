@@ -223,7 +223,7 @@ const REVIEWS_SECTION_HTML = `
 
 const CTA_SECTION_HTML = `
 <section class="cta-section">
-  <img class="cta-bg" src="https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?w=1600&h=600&fit=crop&q=80" alt="" aria-hidden="true" loading="lazy">
+  <img class="cta-bg" src="https://images.unsplash.com/photo-1770756051811-1612ac8bedfa?w=1600&h=600&fit=crop&q=80" alt="" aria-hidden="true" loading="lazy">
   <div class="cta-overlay"></div>
   <div class="cta-content container">
     <div class="section-label label-white">Pronto para Começar?</div>
