@@ -10,7 +10,7 @@ const PHONE           = '932 995 746';
 const PHONE_RAW       = '932995746';
 const EMAIL           = 'fj.072704@gmail.com';
 const ADDRESS         = 'Alexandre Herculano 51, 4780-389 Santo Tirso';
-const WA_LINK         = 'https://wa.me/351932995746';
+const WA_LINK         = 'https://wa.link/qegdyf';
 const FACEBOOK_URL    = 'https://www.facebook.com/share/1CWDQQ3gB7/';
 const INSTAGRAM_URL   = 'https://www.instagram.com/fj_pintura_e_pladur?igsh=MzhkMnR5cnJmYjBt';
 const YEARS_EXP       = '15';
