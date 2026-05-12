@@ -359,6 +359,12 @@ function loadPhoneFlags() {
   document.body.appendChild(js);
 }
 
+const LIGHTBOX_HTML = `
+<div class="lightbox-overlay" id="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Visualizar imagem">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Fechar">&times;</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="">
+</div>`;
+
 const WA_BUTTON_HTML = `
 <a class="wa-float" href="${WA_LINK}" target="_blank" rel="noopener noreferrer" aria-label="Contactar via WhatsApp">
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -388,6 +394,11 @@ function injectComponents(activePage) {
     const waDiv = document.createElement('div');
     waDiv.innerHTML = WA_BUTTON_HTML;
     document.body.appendChild(waDiv.firstElementChild);
+  }
+
+  // Lightbox (image popup)
+  if (!document.getElementById('lightbox-overlay')) {
+    document.body.insertAdjacentHTML('beforeend', LIGHTBOX_HTML);
   }
 
   loadPhoneFlags();

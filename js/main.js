@@ -87,6 +87,36 @@ document.addEventListener('DOMContentLoaded', () => {
   if (overlay) overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
+  /* Lightbox — image popup for gallery/project images */
+  const lbOverlay = document.getElementById('lightbox-overlay');
+  const lbImg = document.getElementById('lightbox-img');
+  const lbClose = document.getElementById('lightbox-close');
+  if (lbOverlay && lbImg) {
+    function openLightbox(src, alt) {
+      lbImg.src = src;
+      lbImg.alt = alt || '';
+      lbOverlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      lbOverlay.classList.remove('open');
+      document.body.style.overflow = '';
+      lbImg.src = '';
+    }
+    document.querySelectorAll('.gallery-item, .project-item').forEach(item => {
+      item.style.cursor = 'zoom-in';
+      item.addEventListener('click', () => {
+        const i = item.querySelector('img');
+        if (i) openLightbox(i.src, i.alt);
+      });
+    });
+    if (lbClose) lbClose.addEventListener('click', closeLightbox);
+    lbOverlay.addEventListener('click', e => { if (e.target === lbOverlay) closeLightbox(); });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && lbOverlay.classList.contains('open')) closeLightbox();
+    });
+  }
+
   /* Quote form (modal) */
   const qForm = document.getElementById('quote-form');
   const qSuccess = document.getElementById('quote-success');
