@@ -1,1 +1,8 @@
 .vercel
+node_modules/
+imgs-original/
+temporary screenshots/
+serve.mjs
+screenshot.mjs
+.DS_Store
+*.log

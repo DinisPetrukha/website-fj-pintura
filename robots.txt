@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /.git/
+Disallow: /.vercel/
+
+Sitemap: https://www.fjpintura.pt/sitemap.xml

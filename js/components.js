@@ -6,25 +6,34 @@
 /* ─── CLIENT CONFIG ─── */
 const COMPANY_NAME    = 'FJ Pintura e Pladur';
 const COMPANY_LEGAL   = 'FJ Pintura e Pladur';
+const SITE_URL        = 'https://www.fjpintura.pt';
 const PHONE           = '932 995 746';
 const PHONE_RAW       = '932995746';
+const PHONE_E164      = '+351932995746';
 const EMAIL           = 'fj.072704@gmail.com';
 const ADDRESS         = 'Alexandre Herculano 51, 4780-389 Santo Tirso';
+const ADDRESS_STREET  = 'Alexandre Herculano 51';
+const ADDRESS_CP      = '4780-389';
+const ADDRESS_CITY    = 'Santo Tirso';
+const ADDRESS_REGION  = 'Porto';
+const ADDRESS_COUNTRY = 'PT';
 const WA_LINK         = 'https://wa.link/qegdyf';
 const FACEBOOK_URL    = 'https://www.facebook.com/share/1CWDQQ3gB7/';
 const INSTAGRAM_URL   = 'https://www.instagram.com/fj_pintura_e_pladur?igsh=MzhkMnR5cnJmYjBt';
 const YEARS_EXP       = '15';
-const TAGLINE         = 'Pintura mecanizada profissional, pintura interna/externa e pladur no Porto e arredores.';
-const CERTIFICATIONS  = ['15 Anos de Experiência', 'Pintura Mecanizada', 'Pladur Profissional'];
-const BRANDS          = 'Pintura Mecanizada · Pladur · Construção e Remodelação';
+const TAGLINE         = 'Pintura e Pladur profissionais no Porto — interiores, exteriores, fachadas, tetos falsos e divisórias.';
+const CERTIFICATIONS  = ['15 Anos de Experiência', 'Pintura Profissional', 'Pladur Profissional'];
+const BRANDS          = 'Pintura · Pladur · Equipamento Airless · Construção e Remodelação';
 /* ─────────────────────────────────────────────────────────── */
 
 /* ─── NAVIGATION ─── */
 const SERVICES = [
-  { label: 'Pintura Mecanizada',         href: 'Pintura-Mecanizada-Airless.html' },
-  { label: 'Pintura Interna e Externa',  href: 'Pintura-Interna-e-Externa.html' },
+  { label: 'Pintura de Interiores',      href: 'Pintura-de-Interiores.html' },
+  { label: 'Pintura de Exteriores',      href: 'Pintura-de-Exteriores.html' },
+  { label: 'Pintura de Fachadas',        href: 'Pintura-de-Fachadas.html' },
   { label: 'Pladur',                     href: 'Pladur.html' },
   { label: 'Pintura de Condomínios',     href: 'Pintura-de-Condominios.html' },
+  { label: 'Pintura Mecanizada (Airless)', href: 'Pintura-Mecanizada-Airless.html' },
 ];
 
 const AREAS = [
@@ -34,6 +43,105 @@ const AREAS = [
   { label: 'Vila Nova de Gaia', href: 'Vila-Nova-de-Gaia.html' },
   { label: 'Braga',             href: 'Braga.html' },
 ];
+/* ─────────────────────────────────────────────────────────── */
+
+/* ─── GLOBAL SCHEMA.ORG JSON-LD (injected on every page) ─── */
+function buildLocalBusinessSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "Painter", "HomeAndConstructionBusiness"],
+    "@id": SITE_URL + "/#business",
+    "name": COMPANY_NAME,
+    "legalName": COMPANY_LEGAL,
+    "url": SITE_URL,
+    "logo": SITE_URL + "/imgs/logo-nobg.png",
+    "image": SITE_URL + "/imgs/logo-nobg.png",
+    "telephone": PHONE_E164,
+    "email": EMAIL,
+    "priceRange": "€€",
+    "description": "Pintura de interiores, exteriores, fachadas e pladur no Porto e arredores. " + YEARS_EXP + " anos de experiência, equipamento Airless e orçamento gratuito em 24h.",
+    "foundingDate": "2010",
+    "slogan": TAGLINE,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": ADDRESS_STREET,
+      "postalCode": ADDRESS_CP,
+      "addressLocality": ADDRESS_CITY,
+      "addressRegion": ADDRESS_REGION,
+      "addressCountry": ADDRESS_COUNTRY
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Porto" },
+      { "@type": "City", "name": "Vila Nova de Gaia" },
+      { "@type": "City", "name": "Maia" },
+      { "@type": "City", "name": "Santo Tirso" },
+      { "@type": "City", "name": "Braga" }
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "13:00"
+      }
+    ],
+    "sameAs": [FACEBOOK_URL, INSTAGRAM_URL],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Serviços de Pintura e Pladur",
+      "itemListElement": SERVICES.map((s, i) => ({
+        "@type": "Offer",
+        "position": i + 1,
+        "itemOffered": {
+          "@type": "Service",
+          "name": s.label,
+          "url": SITE_URL + "/" + s.href.replace('.html', '')
+        }
+      }))
+    }
+  };
+}
+
+function buildOrganizationSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": SITE_URL + "/#organization",
+    "name": COMPANY_LEGAL,
+    "url": SITE_URL,
+    "logo": SITE_URL + "/imgs/logo-nobg.png",
+    "sameAs": [FACEBOOK_URL, INSTAGRAM_URL],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": PHONE_E164,
+      "email": EMAIL,
+      "contactType": "customer service",
+      "areaServed": "PT",
+      "availableLanguage": ["Portuguese"]
+    }
+  };
+}
+
+function injectSchemaLD() {
+  if (document.getElementById('ld-localbusiness')) return;
+  const ld1 = document.createElement('script');
+  ld1.type = 'application/ld+json';
+  ld1.id = 'ld-localbusiness';
+  ld1.textContent = JSON.stringify(buildLocalBusinessSchema());
+  document.head.appendChild(ld1);
+
+  const ld2 = document.createElement('script');
+  ld2.type = 'application/ld+json';
+  ld2.id = 'ld-organization';
+  ld2.textContent = JSON.stringify(buildOrganizationSchema());
+  document.head.appendChild(ld2);
+}
 /* ─────────────────────────────────────────────────────────── */
 
 function chevron() {
@@ -402,6 +510,7 @@ function injectComponents(activePage) {
   }
 
   loadPhoneFlags();
+  injectSchemaLD();
 
   if (activePage) {
     document.querySelectorAll(`[data-page="${activePage}"]`).forEach(el => el.classList.add('active'));
