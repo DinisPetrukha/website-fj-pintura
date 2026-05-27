@@ -1,4 +1,4 @@
-﻿/* ================================================
+/* ================================================
    SHARED COMPONENTS — Header / Footer / Modal
    FJ Pintura e Pladur
    ================================================ */
@@ -6,7 +6,7 @@
 /* ─── CLIENT CONFIG ─── */
 const COMPANY_NAME    = 'FJ Pintura e Pladur';
 const COMPANY_LEGAL   = 'FJ Pintura e Pladur';
-const SITE_URL        = 'https://www.fjpintura.pt';
+const SITE_URL        = 'https://www.fjpinturapladur.pt';
 const PHONE           = '932 995 746';
 const PHONE_RAW       = '932995746';
 const PHONE_E164      = '+351932995746';

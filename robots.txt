@@ -4,4 +4,4 @@ Disallow: /api/
 Disallow: /.git/
 Disallow: /.vercel/
 
-Sitemap: https://www.fjpintura.pt/sitemap.xml
+Sitemap: https://www.fjpinturapladur.pt/sitemap.xml
