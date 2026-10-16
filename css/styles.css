@@ -885,6 +885,14 @@ p:last-child { margin-bottom: 0; }
 .blog-post-content p { margin-bottom: 18px; }
 .blog-post-content ul { margin: 14px 0 20px 24px; list-style: disc; }
 .blog-post-content ul li { color: var(--gray); margin-bottom: 8px; }
+.blog-post-content h3 { font-size: 1.1rem; margin: 24px 0 10px; color: var(--dark); }
+.blog-post-content a { color: var(--green); text-decoration: underline; text-underline-offset: 2px; }
+.blog-post-content a:hover { color: var(--accent-dark); }
+.blog-post-content table { width: 100%; border-collapse: collapse; margin: 18px 0 24px; font-size: 0.92rem; }
+.blog-post-content th, .blog-post-content td { padding: 10px 14px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; color: var(--gray); }
+.blog-post-content th { background: var(--green); color: var(--white); font-family: var(--font-head); font-weight: 700; font-size: 0.85rem; }
+.blog-post-content tbody tr:nth-child(even) td { background: var(--light); }
+.content-main a { color: var(--green); text-decoration: underline; text-underline-offset: 2px; }
 
 /* ================================================
    CONTACT
@@ -1000,7 +1008,8 @@ p:last-child { margin-bottom: 0; }
    SERVICE & AREA PAGE — two-column layout
    ================================================ */
 .content-two-col { display: grid; grid-template-columns: 1fr 340px; gap: 56px; align-items: start; }
-.content-main h2 { margin-bottom: 20px; }
+.content-main h2 { margin: 44px 0 18px; }
+.content-main h2:first-child { margin-top: 0; }
 .content-main h3 { font-size: 1.1rem; margin: 28px 0 10px; }
 .content-main p { margin-bottom: 14px; color: var(--gray); line-height: 1.75; }
 .content-main ul { margin: 0 0 16px 20px; list-style: disc; }

@@ -11,37 +11,44 @@ const PHONE           = '932 995 746';
 const PHONE_RAW       = '932995746';
 const PHONE_E164      = '+351932995746';
 const EMAIL           = 'fj.072704@gmail.com';
-const ADDRESS         = 'Alexandre Herculano 51, 4780-389 Santo Tirso';
-const ADDRESS_STREET  = 'Alexandre Herculano 51';
-const ADDRESS_CP      = '4780-389';
-const ADDRESS_CITY    = 'Santo Tirso';
-const ADDRESS_REGION  = 'Porto';
+const ADDRESS         = 'Almeijoafras, 8200-454 Paderne (Albufeira)';
+const ADDRESS_STREET  = 'Caminho da Aldeia Grande, Casa Dal Mata, Almeijoafras 211N';
+const ADDRESS_CP      = '8200-454';
+const ADDRESS_CITY    = 'Paderne';
+const ADDRESS_REGION  = 'Faro';
 const ADDRESS_COUNTRY = 'PT';
-const WA_LINK         = 'https://wa.link/qegdyf';
+const WA_LINK         = 'https://wa.me/351932995746?text=Ol%C3%A1%2C%20vim%20pelo%20website.%20Gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es';
 const FACEBOOK_URL    = 'https://www.facebook.com/share/1CWDQQ3gB7/';
 const INSTAGRAM_URL   = 'https://www.instagram.com/fj_pintura_e_pladur?igsh=MzhkMnR5cnJmYjBt';
 const YEARS_EXP       = '15';
-const TAGLINE         = 'Pintura e Pladur profissionais no Porto — interiores, exteriores, fachadas, tetos falsos e divisórias.';
+const TAGLINE         = 'Pintura e pladur no Algarve — interiores, exteriores, fachadas, tetos falsos e divisórias, de Albufeira a Faro e Portimão.';
 const CERTIFICATIONS  = ['15 Anos de Experiência', 'Pintura Profissional', 'Pladur Profissional'];
 const BRANDS          = 'Pintura · Pladur · Equipamento Airless · Construção e Remodelação';
 /* ─────────────────────────────────────────────────────────── */
 
 /* ─── NAVIGATION ─── */
 const SERVICES = [
-  { label: 'Pintura de Interiores',      href: 'Pintura-de-Interiores.html' },
-  { label: 'Pintura de Exteriores',      href: 'Pintura-de-Exteriores.html' },
-  { label: 'Pintura de Fachadas',        href: 'Pintura-de-Fachadas.html' },
-  { label: 'Pladur',                     href: 'Pladur.html' },
-  { label: 'Pintura de Condomínios',     href: 'Pintura-de-Condominios.html' },
-  { label: 'Pintura Mecanizada (Airless)', href: 'Pintura-Mecanizada-Airless.html' },
+  { label: 'Pintura de Interiores',        href: '/servicos/pintura-de-interiores' },
+  { label: 'Pintura de Exteriores',        href: '/servicos/pintura-de-exteriores' },
+  { label: 'Pintura de Fachadas',          href: '/servicos/pintura-de-fachadas' },
+  { label: 'Pladur',                       href: '/servicos/pladur' },
+  { label: 'Pintura de Condomínios',       href: '/servicos/pintura-de-condominios' },
+  { label: 'Pintura Mecanizada (Airless)', href: '/servicos/pintura-mecanizada-airless' },
 ];
 
 const AREAS = [
-  { label: 'Porto',             href: 'Porto.html' },
-  { label: 'Santo Tirso',       href: 'Santo-Tirso.html' },
-  { label: 'Maia',              href: 'Maia.html' },
-  { label: 'Vila Nova de Gaia', href: 'Vila-Nova-de-Gaia.html' },
-  { label: 'Braga',             href: 'Braga.html' },
+  { label: 'Albufeira',       href: '/localidades/albufeira' },
+  { label: 'Olhos de Água',   href: '/localidades/olhos-de-agua' },
+  { label: 'Ferreiras',       href: '/localidades/ferreiras' },
+  { label: 'Guia',            href: '/localidades/guia' },
+  { label: 'Galé',            href: '/localidades/gale' },
+  { label: 'Boliqueime',      href: '/localidades/boliqueime' },
+  { label: 'Vilamoura',       href: '/localidades/vilamoura' },
+  { label: 'Quarteira',       href: '/localidades/quarteira' },
+  { label: 'Loulé',           href: '/localidades/loule' },
+  { label: 'Faro',            href: '/localidades/faro' },
+  { label: 'Portimão',        href: '/localidades/portimao' },
+  { label: 'Armação de Pêra', href: '/localidades/armacao-de-pera' },
 ];
 /* ─────────────────────────────────────────────────────────── */
 
@@ -59,24 +66,20 @@ function buildLocalBusinessSchema() {
     "telephone": PHONE_E164,
     "email": EMAIL,
     "priceRange": "€€",
-    "description": "Pintura de interiores, exteriores, fachadas e pladur no Porto e arredores. " + YEARS_EXP + " anos de experiência, equipamento Airless e orçamento gratuito em 24h.",
+    "description": "Pintura de interiores, exteriores, fachadas, condomínios e pladur no Algarve, a partir de Paderne (Albufeira). " + YEARS_EXP + " anos de experiência, equipamento Airless e orçamento gratuito.",
     "foundingDate": "2010",
     "slogan": TAGLINE,
     "address": {
       "@type": "PostalAddress",
       "streetAddress": ADDRESS_STREET,
       "postalCode": ADDRESS_CP,
-      "addressLocality": ADDRESS_CITY,
+      "addressLocality": ADDRESS_CITY + ", Albufeira",
       "addressRegion": ADDRESS_REGION,
       "addressCountry": ADDRESS_COUNTRY
     },
-    "areaServed": [
-      { "@type": "City", "name": "Porto" },
-      { "@type": "City", "name": "Vila Nova de Gaia" },
-      { "@type": "City", "name": "Maia" },
-      { "@type": "City", "name": "Santo Tirso" },
-      { "@type": "City", "name": "Braga" }
-    ],
+    "areaServed": [{ "@type": "AdministrativeArea", "name": "Algarve" }].concat(
+      AREAS.map(a => ({ "@type": "City", "name": a.label }))
+    ),
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -101,7 +104,7 @@ function buildLocalBusinessSchema() {
         "itemOffered": {
           "@type": "Service",
           "name": s.label,
-          "url": SITE_URL + "/" + s.href.replace('.html', '')
+          "url": SITE_URL + s.href
         }
       }))
     }
@@ -155,7 +158,7 @@ function phoneSVG() {
 }
 
 function logoIMG(height) {
-  return `<img src="imgs/logo-nobg.png" alt="${COMPANY_NAME}" style="height:${height || 80}px;width:auto;display:block;">`;
+  return `<img src="/imgs/logo-nobg.png" alt="${COMPANY_NAME}" style="height:${height || 80}px;width:auto;display:block;">`;
 }
 
 function buildDropdown(items) {
@@ -171,22 +174,22 @@ const HEADER = `
 <header id="site-header">
   <div class="container">
     <div class="header-inner">
-      <a href="index.html" class="logo">
+      <a href="/" class="logo">
         ${logoIMG(80)}
       </a>
       <nav class="main-nav">
-        <a href="index.html" class="nav-link" data-page="home">Início</a>
+        <a href="/" class="nav-link" data-page="home">Início</a>
         <div class="nav-item">
           <a class="nav-link" data-page="services" href="#">Serviços ${chevron()}</a>
           ${buildDropdown(SERVICES)}
         </div>
-        <a href="projects.html" class="nav-link" data-page="projects">Projetos</a>
+        <a href="/projetos" class="nav-link" data-page="projects">Projetos</a>
         <div class="nav-item">
           <a class="nav-link" data-page="areas" href="#">Áreas de Serviço ${chevron()}</a>
           ${buildDropdown(AREAS)}
         </div>
-        <a href="blog.html" class="nav-link" data-page="blog">Blog</a>
-        <a href="contact.html" class="nav-link" data-page="contact">Contacto</a>
+        <a href="/blog" class="nav-link" data-page="blog">Blog</a>
+        <a href="/contacto" class="nav-link" data-page="contact">Contacto</a>
       </nav>
       <div class="header-right">
         <a href="tel:${PHONE_RAW}" class="header-phone">
@@ -202,18 +205,18 @@ const HEADER = `
   </div>
 </header>
 <div class="mobile-nav" id="mobile-nav">
-  <a href="index.html" class="mobile-nav-link">Início</a>
+  <a href="/" class="mobile-nav-link">Início</a>
   <div>
     <div class="mobile-dropdown-title" data-target="mob-svc">Serviços ${chevron()}</div>
     <div class="mobile-dropdown-items" id="mob-svc">${SERVICES.map(s => `<a href="${s.href}">${s.label}</a>`).join('')}</div>
   </div>
-  <a href="projects.html" class="mobile-nav-link">Projetos</a>
+  <a href="/projetos" class="mobile-nav-link">Projetos</a>
   <div>
     <div class="mobile-dropdown-title" data-target="mob-areas">Áreas de Serviço ${chevron()}</div>
     <div class="mobile-dropdown-items" id="mob-areas">${AREAS.map(a => `<a href="${a.href}">${a.label}</a>`).join('')}</div>
   </div>
-  <a href="blog.html" class="mobile-nav-link">Blog</a>
-  <a href="contact.html" class="mobile-nav-link">Contacto</a>
+  <a href="/blog" class="mobile-nav-link">Blog</a>
+  <a href="/contacto" class="mobile-nav-link">Contacto</a>
   <div class="mobile-cta">
     <a href="tel:${PHONE_RAW}" class="btn btn-outline-white">Ligar ${PHONE}</a>
     <button class="btn btn-green open-modal">Orçamento Grátis</button>
@@ -235,7 +238,7 @@ const PROCESS_HTML = `
         </div>
         <div class="process-num">Passo 01</div>
         <h4>Orçamento Grátis</h4>
-        <p>Contacte-nos e deslocamo-nos ao local para avaliação gratuita. Proposta em 24h.</p>
+        <p>Contacte-nos e vamos ao local fazer a avaliação gratuita. Proposta escrita em 24h.</p>
       </div>
       <div class="process-step">
         <div class="process-icon">
@@ -274,11 +277,11 @@ const PROCESS_HTML = `
 </section>`;
 
 const AREAS_SECTION_HTML = `
-<section class="section section-light">
+<section class="section section-light" id="localidades">
   <div class="container">
     <div class="section-header">
       <div class="section-label">Cobertura</div>
-      <h2>Áreas que Servimos</h2>
+      <h2>Localidades Onde Trabalhamos no Algarve</h2>
       <p>${TAGLINE}</p>
     </div>
     <div class="areas-grid">
@@ -306,7 +309,7 @@ const REVIEWS_SECTION_HTML = `
         <p class="review-text">"Excelente trabalho! A pintura ficou impecável, com um acabamento muito profissional e sem sujidade."</p>
         <div class="reviewer">
           <div class="reviewer-avatar">JS</div>
-          <div><div class="reviewer-name">João Silva</div><div class="reviewer-loc">Porto · 2022</div></div>
+          <div><div class="reviewer-name">João Silva</div><div class="reviewer-loc">Pintura interior</div></div>
         </div>
       </div>
       <div class="review-card">
@@ -314,7 +317,7 @@ const REVIEWS_SECTION_HTML = `
         <p class="review-text">"Fizeram o teto falso em pladur cá em casa e ficou perfeito. Muito rigor e atenção ao detalhe."</p>
         <div class="reviewer">
           <div class="reviewer-avatar">AF</div>
-          <div><div class="reviewer-name">Ana Ferreira</div><div class="reviewer-loc">Santo Tirso · 2022</div></div>
+          <div><div class="reviewer-name">Ana Ferreira</div><div class="reviewer-loc">Teto falso em pladur</div></div>
         </div>
       </div>
       <div class="review-card">
@@ -322,7 +325,7 @@ const REVIEWS_SECTION_HTML = `
         <p class="review-text">"Destaco a rapidez na resposta e na execução. Cumpriram prazos e o resultado final foi excelente."</p>
         <div class="reviewer">
           <div class="reviewer-avatar">RS</div>
-          <div><div class="reviewer-name">Ricardo Santos</div><div class="reviewer-loc">Porto · 2023</div></div>
+          <div><div class="reviewer-name">Ricardo Santos</div><div class="reviewer-loc">Pintura exterior</div></div>
         </div>
       </div>
     </div>
@@ -336,7 +339,7 @@ const CTA_SECTION_HTML = `
   <div class="cta-content container">
     <div class="section-label label-white">Pronto para Começar?</div>
     <h2>Peça um Orçamento Grátis Hoje!</h2>
-    <p>Visita gratuita, proposta em 24h e resposta imediata — o seu projeto não pode ficar parado.</p>
+    <p>Visita gratuita em todo o Algarve central e proposta escrita em 24 horas. Ligue, envie mensagem ou peça orçamento online.</p>
     <div class="cta-btns">
       <button class="btn btn-green btn-lg open-modal">Orçamento Grátis</button>
       <a href="tel:${PHONE_RAW}" class="btn btn-outline-white btn-lg">${PHONE}</a>
@@ -351,7 +354,7 @@ const FOOTER_HTML = `
       <div class="footer-grid">
         <div>
           <div class="footer-logo-wrap">
-            <img src="imgs/logo-nobg.png" alt="${COMPANY_NAME}" style="height:80px;width:auto;margin-bottom:12px;display:block;">
+            <img src="/imgs/logo-nobg.png" alt="${COMPANY_NAME}" style="height:80px;width:auto;margin-bottom:12px;display:block;">
           </div>
           <p class="footer-tagline">${TAGLINE} ${YEARS_EXP} anos de experiência.</p>
           <div class="footer-contact">
@@ -380,20 +383,20 @@ const FOOTER_HTML = `
           <ul>${CERTIFICATIONS.map(c => `<li><span style="color:rgba(255,255,255,0.55);font-size:0.85rem;">${c}</span></li>`).join('')}</ul>
         </div>
         <div class="footer-col">
-          <h4>Áreas</h4>
+          <h4>Localidades</h4>
           <ul>${AREAS.map(a => `<li><a href="${a.href}">${a.label}</a></li>`).join('')}</ul>
         </div>
         <div class="footer-col">
           <h4>Links Rápidos</h4>
           <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="projects.html">Os Nossos Projetos</a></li>
-            <li><a href="about.html">Sobre Nós</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-            <li><a href="contact.html">Orçamento Grátis</a></li>
-            <li><a href="terms.html">Termos &amp; Condições</a></li>
-            <li><a href="privacy-policy.html">Política de Privacidade</a></li>
+            <li><a href="/">Início</a></li>
+            <li><a href="/projetos">Os Nossos Projetos</a></li>
+            <li><a href="/sobre">Sobre Nós</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+            <li><a href="${WA_LINK}" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="/terms">Termos &amp; Condições</a></li>
+            <li><a href="/politica-de-privacidade">Política de Privacidade</a></li>
           </ul>
           <h4 style="margin-top:24px;">Técnicas</h4>
           <ul>
@@ -405,8 +408,8 @@ const FOOTER_HTML = `
     <div class="footer-bottom">
       <span class="footer-copy">&copy; ${new Date().getFullYear()} ${COMPANY_LEGAL}. Todos os direitos reservados.</span>
       <div class="footer-legal">
-        <a href="terms.html">Termos &amp; Condições</a>
-        <a href="privacy-policy.html">Política de Privacidade</a>
+        <a href="/terms">Termos &amp; Condições</a>
+        <a href="/politica-de-privacidade">Política de Privacidade</a>
       </div>
     </div>
   </div>
@@ -418,7 +421,7 @@ const MODAL_HTML = `
     <button class="modal-close" id="modal-close" aria-label="Fechar">&times;</button>
     <div class="modal-logo">
       <div style="text-align:center;">
-        <img src="imgs/logo-nobg.png" alt="${COMPANY_NAME}" style="height:72px;width:auto;margin:0 auto 8px;">
+        <img src="/imgs/logo-nobg.png" alt="${COMPANY_NAME}" style="height:72px;width:auto;margin:0 auto 8px;">
       </div>
     </div>
     <h2>PEÇA UM ORÇAMENTO GRÁTIS</h2>
@@ -438,7 +441,7 @@ const MODAL_HTML = `
       <div class="form-group">
         <div class="form-check">
           <input type="checkbox" id="m-terms" name="terms" required>
-          <label for="m-terms">Concordo com os <a href="terms.html" target="_blank">termos &amp; condições</a>. Ao fornecer o meu número, aceito receber mensagens da empresa.</label>
+          <label for="m-terms">Concordo com os <a href="/terms" target="_blank">termos &amp; condições</a>. Ao fornecer o meu número, aceito receber mensagens da empresa.</label>
         </div>
       </div>
       <button type="submit" class="btn btn-green btn-lg btn-send">ENVIAR PEDIDO</button>
@@ -461,7 +464,7 @@ function loadPhoneFlags() {
   js.src = 'https://cdn.jsdelivr.net/npm/intl-tel-input@23/build/js/intlTelInput.min.js';
   js.onload = () => {
     const pf = document.createElement('script');
-    pf.src = 'js/phone-flags.js';
+    pf.src = '/js/phone-flags.js';
     document.body.appendChild(pf);
   };
   document.body.appendChild(js);

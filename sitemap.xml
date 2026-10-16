@@ -2,128 +2,188 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.fjpinturapladur.pt/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.fjpinturapladur.pt/about</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.fjpinturapladur.pt/contact</loc>
-    <lastmod>2026-05-27</lastmod>
+    <loc>https://www.fjpinturapladur.pt/contacto</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.fjpinturapladur.pt/projects</loc>
-    <lastmod>2026-05-27</lastmod>
+    <loc>https://www.fjpinturapladur.pt/projetos</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.fjpinturapladur.pt/sobre</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.fjpinturapladur.pt/blog</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.fjpinturapladur.pt/Pintura-de-Interiores</loc>
-    <lastmod>2026-05-27</lastmod>
+    <loc>https://www.fjpinturapladur.pt/servicos/pintura-de-condominios</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.fjpinturapladur.pt/Pintura-de-Exteriores</loc>
-    <lastmod>2026-05-27</lastmod>
+    <loc>https://www.fjpinturapladur.pt/servicos/pintura-de-exteriores</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.fjpinturapladur.pt/Pintura-de-Fachadas</loc>
-    <lastmod>2026-05-27</lastmod>
+    <loc>https://www.fjpinturapladur.pt/servicos/pintura-de-fachadas</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.fjpinturapladur.pt/Pladur</loc>
-    <lastmod>2026-05-27</lastmod>
+    <loc>https://www.fjpinturapladur.pt/servicos/pintura-de-interiores</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.fjpinturapladur.pt/Pintura-de-Condominios</loc>
-    <lastmod>2026-05-27</lastmod>
+    <loc>https://www.fjpinturapladur.pt/servicos/pintura-mecanizada-airless</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.fjpinturapladur.pt/Pintura-Mecanizada-Airless</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.fjpinturapladur.pt/Porto</loc>
-    <lastmod>2026-05-27</lastmod>
+    <loc>https://www.fjpinturapladur.pt/servicos/pladur</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.fjpinturapladur.pt/Vila-Nova-de-Gaia</loc>
-    <lastmod>2026-05-27</lastmod>
+    <loc>https://www.fjpinturapladur.pt/localidades/albufeira</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.fjpinturapladur.pt/Maia</loc>
-    <lastmod>2026-05-27</lastmod>
+    <loc>https://www.fjpinturapladur.pt/localidades/armacao-de-pera</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.fjpinturapladur.pt/Santo-Tirso</loc>
-    <lastmod>2026-05-27</lastmod>
+    <loc>https://www.fjpinturapladur.pt/localidades/boliqueime</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.fjpinturapladur.pt/Braga</loc>
-    <lastmod>2026-05-27</lastmod>
+    <loc>https://www.fjpinturapladur.pt/localidades/faro</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.fjpinturapladur.pt/blog-pintura-mecanizada-edificios</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>yearly</changefreq>
+    <loc>https://www.fjpinturapladur.pt/localidades/ferreiras</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.fjpinturapladur.pt/localidades/gale</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.fjpinturapladur.pt/localidades/guia</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.fjpinturapladur.pt/localidades/loule</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.fjpinturapladur.pt/localidades/olhos-de-agua</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.fjpinturapladur.pt/localidades/portimao</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.fjpinturapladur.pt/localidades/quarteira</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.fjpinturapladur.pt/localidades/vilamoura</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.fjpinturapladur.pt/blog-cal-ou-tinta-casa-algarvia</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.fjpinturapladur.pt/blog-pintura-alojamento-local-algarve</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.fjpinturapladur.pt/blog-pintura-condominios</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.fjpinturapladur.pt/blog-pintura-exterior-maresia-algarve</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.fjpinturapladur.pt/blog-pintura-mecanizada-edificios</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.fjpinturapladur.pt/blog-quanto-custa-pintar-casa-algarve</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.fjpinturapladur.pt/blog-quanto-custa-pintar-condominios</loc>
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fjpinturapladur.pt/privacy-policy</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://www.fjpinturapladur.pt/terms</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://www.fjpinturapladur.pt/blog-teto-falso-pladur-preco</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

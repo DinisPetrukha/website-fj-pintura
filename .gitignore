@@ -6,3 +6,4 @@ serve.mjs
 screenshot.mjs
 .DS_Store
 *.log
+.gsc-state.json
