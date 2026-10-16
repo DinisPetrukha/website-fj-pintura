@@ -464,7 +464,7 @@ function loadPhoneFlags() {
   js.src = 'https://cdn.jsdelivr.net/npm/intl-tel-input@23/build/js/intlTelInput.min.js';
   js.onload = () => {
     const pf = document.createElement('script');
-    pf.src = '/js/phone-flags.js';
+    pf.src = '/js/phone-flags.js?v=20261016';
     document.body.appendChild(pf);
   };
   document.body.appendChild(js);
