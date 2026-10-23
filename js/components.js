@@ -21,17 +21,17 @@ const WA_LINK         = 'https://wa.me/351932995746?text=Ol%C3%A1%2C%20vim%20pel
 const FACEBOOK_URL    = 'https://www.facebook.com/share/1CWDQQ3gB7/';
 const INSTAGRAM_URL   = 'https://www.instagram.com/fj_pintura_e_pladur?igsh=MzhkMnR5cnJmYjBt';
 const YEARS_EXP       = '15';
-const TAGLINE         = 'Pintura e pladur no Algarve — interiores, exteriores, fachadas, tetos falsos e divisórias, de Albufeira a Faro e Portimão.';
-const CERTIFICATIONS  = ['15 Anos de Experiência', 'Pintura Profissional', 'Pladur Profissional'];
-const BRANDS          = 'Pintura · Pladur · Equipamento Airless · Construção e Remodelação';
+const TAGLINE         = 'Pladur e pintura no Algarve — tetos falsos, divisórias, interiores, exteriores e fachadas, de Albufeira a Faro e Portimão.';
+const CERTIFICATIONS  = ['15 Anos de Experiência', 'Pladur Profissional', 'Pintura Profissional'];
+const BRANDS          = 'Pladur · Pintura · Equipamento Airless · Construção e Remodelação';
 /* ─────────────────────────────────────────────────────────── */
 
 /* ─── NAVIGATION ─── */
 const SERVICES = [
+  { label: 'Pladur (Tetos Falsos e Divisórias)', href: '/servicos/pladur' },
   { label: 'Pintura de Interiores',        href: '/servicos/pintura-de-interiores' },
   { label: 'Pintura de Exteriores',        href: '/servicos/pintura-de-exteriores' },
   { label: 'Pintura de Fachadas',          href: '/servicos/pintura-de-fachadas' },
-  { label: 'Pladur',                       href: '/servicos/pladur' },
   { label: 'Pintura de Condomínios',       href: '/servicos/pintura-de-condominios' },
   { label: 'Pintura Mecanizada (Airless)', href: '/servicos/pintura-mecanizada-airless' },
 ];
@@ -66,7 +66,7 @@ function buildLocalBusinessSchema() {
     "telephone": PHONE_E164,
     "email": EMAIL,
     "priceRange": "€€",
-    "description": "Pintura de interiores, exteriores, fachadas, condomínios e pladur no Algarve, a partir de Paderne (Albufeira). " + YEARS_EXP + " anos de experiência, equipamento Airless e orçamento gratuito.",
+    "description": "Pladur (tetos falsos, divisórias, sancas e isolamento) e pintura de interiores, exteriores, fachadas e condomínios no Algarve, a partir de Paderne (Albufeira). " + YEARS_EXP + " anos de experiência, equipamento Airless e orçamento gratuito.",
     "foundingDate": "2010",
     "slogan": TAGLINE,
     "address": {
@@ -97,7 +97,7 @@ function buildLocalBusinessSchema() {
     "sameAs": [FACEBOOK_URL, INSTAGRAM_URL],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Serviços de Pintura e Pladur",
+      "name": "Serviços de Pladur e Pintura",
       "itemListElement": SERVICES.map((s, i) => ({
         "@type": "Offer",
         "position": i + 1,
@@ -262,7 +262,7 @@ const PROCESS_HTML = `
         </div>
         <div class="process-num">Passo 04</div>
         <h4>Execução Profissional</h4>
-        <p>Pintura mecanizada profissional e trabalhos de pladur com máxima precisão e rapidez.</p>
+        <p>Montagem de pladur e pintura profissional com máxima precisão e rapidez.</p>
       </div>
       <div class="process-step">
         <div class="process-icon">
@@ -436,7 +436,7 @@ const MODAL_HTML = `
       </div>
       <div class="form-group">
         <label for="m-msg">O que precisa? <span class="req">*</span></label>
-        <textarea id="m-msg" name="message" placeholder="Ex: pintura de sala e quartos, teto falso em pladur, pintura exterior..." required></textarea>
+        <textarea id="m-msg" name="message" placeholder="Ex: teto falso em pladur, divisória, pintura de sala e quartos..." required></textarea>
       </div>
       <div class="form-group">
         <div class="form-check">
